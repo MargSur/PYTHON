@@ -15,9 +15,9 @@ days = 1
 print(days, '-й день:', round(start))
 
 while start <= finish:
-        start += start / 10
-        days += 1
-        print(days, '-й день:', round(start, 2))
+    start += start / 10
+    days += 1
+    print(days, '-й день:', round(start, 2))
 else:
-        print(f'На {days}-й день спортсмен достиг результата '
-              f'— не менее {int(start)} км.')
+    print(f'На {days}-й день спортсмен достиг результата '
+          f'— не менее {int(start)} км.')
