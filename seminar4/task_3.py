@@ -3,6 +3,7 @@
 """ 3. Реализовать функцию my_func(), которая принимает три позиционных аргумента,
 и возвращает сумму наибольших двух аргументов. """
 
+
 def my_func(x, y, z):
     sorting = [x, y, z]
     total = []
@@ -13,5 +14,5 @@ def my_func(x, y, z):
     total.append(max_num2)
     print(sum(total))
 
-my_func(x=14, y=16, z=-5)
 
+my_func(x=14, y=16, z=-5)
