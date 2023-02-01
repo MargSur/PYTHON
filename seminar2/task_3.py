@@ -8,6 +8,5 @@
 """
 
 list_1 = [9, -9, None, 'Текст', True, 2.5]
-item = 0
 for item in list_1:
     print(type(item))
