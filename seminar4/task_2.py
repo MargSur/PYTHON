@@ -3,6 +3,7 @@
 Функция должна принимать параметры как именованные аргументы.
 Реализовать вывод данных о пользователе одной строкой. """
 
+
 def my_func(name, surname, year, city, email, telephone):
     return " ".join([name, surname, year, city, email, telephone])
 
