@@ -4,6 +4,7 @@
 предусмотреть обработку ситуации деления на ноль (try except).
 """
 
+
 def division(*args):
 
     try:
@@ -14,5 +15,6 @@ def division(*args):
         return "На 0 делить нельзя! Введите число отличное от 0"
 
     return res
+
 
 print(f'{division()}')
