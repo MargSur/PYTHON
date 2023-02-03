@@ -18,4 +18,4 @@ def my_func(arg_1, arg_2, arg_3, arg_4, arg_5, arg_6):
 
 
 print(my_func(arg_1=name, arg_2=surname, arg_3=year,
-               arg_4=place, arg_5=e_mail, arg_6=phone))
+              arg_4=place, arg_5=e_mail, arg_6=phone))
