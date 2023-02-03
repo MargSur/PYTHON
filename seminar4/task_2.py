@@ -11,11 +11,11 @@ e_mail = input('Ваш e-mail: ')
 phone = input('Ваш номер телефона: ')
 
 
-def personal(arg_1, arg_2, arg_3, arg_4, arg_5, arg_6):
+def my_func(arg_1, arg_2, arg_3, arg_4, arg_5, arg_6):
     result = f'{name} {surname} {year} г.р., г.{place}, ' \
              f'e-mail: {e_mail}, phone: {phone}'
     return result
 
 
-print(personal(arg_1=name, arg_2=surname, arg_3=year,
+print(my_func(arg_1=name, arg_2=surname, arg_3=year,
                arg_4=place, arg_5=e_mail, arg_6=phone))
