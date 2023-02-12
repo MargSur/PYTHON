@@ -11,9 +11,9 @@ if len(argv) > 1:
     time_work = int(time_work)
     rate = int(rate)
     bonus = int(bonus)
-    print((time_work * rate) + prize)
+    print((time_work * rate) + bonus)
 else:
     time_work = int(input("Введите отработанные часы: "))
     rate = int(input("Введите ставку/ч: "))
-    prize = int(input("Введите бонус: "))
-    print((time_work * rate) + prize)
+    bonus = int(input("Введите бонус: "))
+    print(time_work * rate + bonus)
