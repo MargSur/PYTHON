@@ -2,12 +2,19 @@
 под номером 32 и заканчивая 127-м включительно.
 Вывод выполнить в табличной форме: по десять пар "код-символ" в каждой строке. """
 
-row = ''
-table = ''
-for char in range(32, 128):
-    row += '{}:{}\t'.format(char, chr(char))
-    if not (char - 31) % 10:
-        table += '{}\n'.format(row)
-        row = ''
-table += '{}\n'.format(row)
-print(table)
+
+def function(i=32, j=0):
+
+    if i > 127:
+        return
+    else:
+        j += 1
+        print(f'{i} - {chr(i)}', end=" ")
+        if j == 10:
+            print(" ")
+            function(i + 1, j=0)
+        else:
+            function(i + 1, j=j)
+
+
+function()

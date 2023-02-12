@@ -3,14 +3,12 @@
 цифр и вывести на экран. Например, если введено число 3486,
 то надо вывести число 6843. """
 
+
+def reverse(num):
+    if num < 10:
+        return str(num)
+    return str(num % 10) + reverse(num // 10)
+
+
 num = int(input('Введите число: '))
-
-def reverse(n1, n2=0) -> int:
-    n2 = n2 * 10 + n1 % 10
-    n1 //= 10
-    if n1 == 0:
-        return n2
-    return reverse(n1, n2)
-
-z = reverse(num)
-print(z)
+print(f'Перевернутое число: {reverse(num)}')
