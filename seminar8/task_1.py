@@ -2,3 +2,10 @@
 записать в него построчно данные, вводимые пользователем.
 Об окончании ввода данных свидетельствует пустая строка. """
 
+with open('poem.txt', 'w', encoding='utf-8') as text:
+    while True:
+        line = input("Введите строку: ")
+        if line == '':
+            break
+        else:
+            text.write(f'{line}\n')
